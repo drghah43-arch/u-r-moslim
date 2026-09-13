@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>القرآن الكريم</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="quran-page-body">
+
+<div class="background">
+    <div class="stars"></div>
+    <div class="glow"></div>
+</div>
+
+
+<header class="topbar">
+
+    <a href="index.html" class="back">
+        ← الرئيسية
+    </a>
+
+    <div class="top-title">
+        📖 القرآن الكريم
+    </div>
+
+</header>
+
+
+<main class="quran-container">
+
+    <section class="quran-hero">
+
+        <div class="quran-symbol">
+            ۞
+        </div>
+
+        <h1>
+            القرآن الكريم
+        </h1>
+
+        <p>
+            كِتَابُ اللهِ وَهُدَاهُ
+        </p>
+
+    </section>
+
+
+    <div class="quran-tools">
+
+        <input
+            id="searchSurah"
+            type="text"
+            placeholder="ابحث عن سورة..."
+        >
+
+    </div>
+
+
+    <div
+        id="surahList"
+        class="surah-grid"
+    >
+
+        <div class="loading">
+            جاري تحميل السور...
+        </div>
+
+    </div>
+
+
+    <section
+        id="reader"
+        class="quran-reader hidden"
+    >
+
+        <button
+            id="closeReader"
+            class="close-reader"
+        >
+            × إغلاق
+        </button>
+
+        <div id="surahInfo"></div>
+
+        <div
+            id="ayahs"
+            class="ayahs"
+        ></div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+
+initQuran();
+
+</script>
+
+</body>
+</html>
